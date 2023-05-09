@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <fields>
+        <fullName>Name</fullName>
+        <externalId>false</externalId>
+        <label>Name</label>
+        <length>80</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Choice_Name__c</fullName>
+        <description>Choice Name</description>
+        <externalId>false</externalId>
+        <label>Choice Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Survey_Question__c</fullName>
+        <externalId>false</externalId>
+        <label>Survey Question</label>
+        <referenceTo>Survey_Question__c</referenceTo>
+        <relationshipLabel>Survey Questions</relationshipLabel>
+        <relationshipName>Survey_Question_Choices</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Survey Question Choices</label>
+    <listViews>
+        <fullName>ALL</fullName>
+        <columns>NAME</columns>
+    </listViews>
+    <pageLayouts>
+        <fullName>Survey_Question_Choices</fullName>
+    </pageLayouts>
+    <pluralLabel>Survey Question Choices</pluralLabel>
+    <sharingModel>ReadWrite</sharingModel>
+    <tabSetting>DefaultOn</tabSetting>
+    <visibility>Public</visibility>
+</CustomObject>
